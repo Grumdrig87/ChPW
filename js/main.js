@@ -1,20 +1,9 @@
 jQuery(document).ready(function($) {
   if (jQuery('[data-readmore]').length > 0) {
       jQuery('[data-readmore]').readmore({
-          collapsedHeight: 313,
-          moreLink: '<a href="#">Read more</a>'
-      });
-  }
-  if (jQuery('[data-readmoref]').length > 0) {
-      jQuery('[data-readmoref]').readmore({
-          collapsedHeight: 189,
-          moreLink: '<a href="#">Read more</a>'
-      });
-  }
-  if (jQuery('[data-readmoret]').length > 0) {
-      jQuery('[data-readmoret]').readmore({
-          collapsedHeight: 380,
-          moreLink: '<a href="#">Read more</a>'
+          collapsedHeight: 329,
+          moreLink: '<a href="#">Show more</a>',
+          lessLink: '<a href="#">Show less</a>'
       });
   }
   //nav
