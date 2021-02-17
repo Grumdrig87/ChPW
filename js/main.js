@@ -25,10 +25,6 @@ jQuery(document).ready(function($) {
           });
           $(this).removeClass('transp');
       });
-      var menuChild = $('[data-nav] > ul >li.menu-item-has-children');
-      $(menuChild).hover(function() {
-          $('body').toggleClass('open');
-      });
   }
   if ($(window).width() < 993) {
       $('[data-nav] .menu-item-has-children > a').click(function() {
