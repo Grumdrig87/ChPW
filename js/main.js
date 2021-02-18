@@ -6,6 +6,13 @@ jQuery(document).ready(function($) {
           lessLink: '<a href="#">Show less</a>'
       });
   }
+  if (jQuery('[data-readmoreSec]').length > 0) {
+      jQuery('[data-readmoreSec]').readmore({
+          collapsedHeight: 286,
+          moreLink: '<a href="#">Show more</a>',
+          lessLink: '<a href="#">Show less</a>'
+      });
+  }
   //nav
   if ($(window).width() > 993) {
       $('[data-nav] > ul >li').hover(function() {

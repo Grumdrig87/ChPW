@@ -108,10 +108,6 @@ input {
 
 .header {
 	padding: 24px 0;
-	-webkit-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	transition: all 0.3s ease;
 }
 .header__wrap {
 	display: -webkit-box;
@@ -219,63 +215,23 @@ input {
 }
 /* ---fixed header--- */
 
-.header_fixed .wrap__head {
-	height: 80px;
+.wrap__head {
+	height: 96px;
 }
 .header_fixed .header {
 	background: #FFFFFF;
-	padding: 33px 0;
 	position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
 	z-index: 5;
 }
-.header_fixed .header__logo {
-	color: #000;
-}
-.header_fixed .header__logo path {
-	fill: #000;
-}
-.header_fixed .header__nav >ul>li>a {
-	color: #000;
-}
+
+
 .header_fixed .header__nav > ul > li > .sub-menu {
 	padding-top: 56px;
-	-webkit-box-shadow: 0px 101px 39px rgba(28, 41, 55, 0.1) !important;
-	-moz-box-shadow: 0px 101px 39px rgba(28, 41, 55, 0.1) !important;
-	box-shadow: 0px 101px 39px rgba(28, 41, 55, 0.1) !important;
 }
-.header_fixed .header__nav {
-	margin-left: auto;
-}
-.order__btn {
-	margin-left: 40px;
-	padding: 4px 16px;
-	font-size: 14px;
-	line-height: 24px;
-	display: none;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-moz-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-moz-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-}
-.header_fixed .order__btn {
-	display: -webkit-inline-box;
-	display: -webkit-inline-flex;
-	display: -moz-inline-box;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
-}
-.order__btn svg {
-	margin-left: 12px;
-}
+
 /* ---main--- */
 
 .main {
@@ -355,4 +311,10 @@ line-height: 150%;
 	top: 25px;
 	right: -50px;
 	background: url('../img/cards-r.png') no-repeat 0 0 / cover;
+}
+
+/* ----academ---- */
+
+.academ {
+	padding: 282px 0;
 }
