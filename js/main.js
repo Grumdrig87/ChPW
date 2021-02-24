@@ -42,9 +42,11 @@ jQuery(document).ready(function($) {
       }
   });
   //tabs
-  $('[data-can]').on('click', function() {
-      $(this).addClass('active').siblings().removeClass('active').closest('.can__wrap').find('ul.can__list').removeClass('active').eq($(this).index()).addClass('active');
-  });
+  $('[data-tab]').on('click', function() {
+    $('[data-table]').slick('unslick'); 
+      $(this).addClass('active').siblings().removeClass('active').closest('.table__card').find('[data-table]').removeClass('active').eq($(this).index()).addClass('active');
+      table ();
+    });
   // team
   $('[data-team]').click(function() {
       $(this).toggleClass('open');
@@ -52,19 +54,24 @@ jQuery(document).ready(function($) {
       $(this).find('p').slideToggle(300);
   })
   //slider
-//   if (jQuery('[data-writers]').length > 0) {
-//       $('[data-writers]').slick({
-//           dots: true,
-//           speed: 300,
-//           slidesToShow: 2,
-//           responsive: [{
-//               breakpoint: 768,
-//               settings: {
-//                   slidesToShow: 1
-//               }
-//           }, ]
-//       });
-//   }
+  function table (){
+    if (jQuery('[data-table]').length > 0) {
+        $('[data-table]').slick({
+            dots: false,
+            speed: 300,
+            arrows: false,
+            slidesToShow: 4,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            }, ]
+        });
+    }
+  }
+  table ();
+  
 //   if (jQuery('[data-talk]').length > 0) {
 //       $('[data-talk]').slick({
 //           dots: true,
