@@ -71,6 +71,21 @@ jQuery(document).ready(function($) {
     }
   }
   table ();
+  if (jQuery('[data-talk]').length > 0) {
+    $('[data-talk]').slick({
+        dots: true,
+        appendDots: $('[data-line]'),
+        speed: 300,
+        arrows: false,
+        slidesToShow: 4,
+        variableWidth: true
+    });
+}
+var sliderItemsNum = $('[data-talk]').find('.slick-slide').not('.slick-cloned').length;
+var dotWidth = $('[data-THelp]').width() / sliderItemsNum;
+$('[data-line] ul li').css({
+    'width': dotWidth
+});
   
 //   if (jQuery('[data-talk]').length > 0) {
 //       $('[data-talk]').slick({
