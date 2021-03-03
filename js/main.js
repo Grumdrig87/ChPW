@@ -1,18 +1,25 @@
 jQuery(document).ready(function($) {
   if (jQuery('[data-readmore]').length > 0) {
       jQuery('[data-readmore]').readmore({
-          collapsedHeight: 329,
-          moreLink: '<a href="#">Show more</a>',
-          lessLink: '<a href="#">Show less</a>'
+          collapsedHeight: 309,
+          moreLink: '<a href="#">Show More</a>',
+          lessLink: '<a href="#">Show Less</a>'
       });
   }
   if (jQuery('[data-readmoreSec]').length > 0) {
       jQuery('[data-readmoreSec]').readmore({
           collapsedHeight: 286,
-          moreLink: '<a href="#">Show more</a>',
-          lessLink: '<a href="#">Show less</a>'
+          moreLink: '<a href="#">Show More</a>',
+          lessLink: '<a href="#">Show Less</a>'
       });
   }
+  if (jQuery('[data-readmoret]').length > 0) {
+    jQuery('[data-readmoret]').readmore({
+        collapsedHeight: 570,
+        moreLink: '<a href="#">Show More</a>',
+        lessLink: '<a href="#">Show Less</a>'
+    });
+}
   //nav
   if ($(window).width() > 993) {
       $('[data-nav] > ul >li').hover(function() {
