@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
   }
   if (jQuery('[data-readmoreSec]').length > 0) {
       jQuery('[data-readmoreSec]').readmore({
-          collapsedHeight: 286,
+          collapsedHeight: 266,
           moreLink: '<a href="#">Show More</a>',
           lessLink: '<a href="#">Show Less</a>'
       });

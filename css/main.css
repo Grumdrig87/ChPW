@@ -338,8 +338,8 @@ line-height: 150%;
 	position: absolute;
 	width: 317px;
 	height: 177px;
-	top: 25px;
-	left: -50px;
+	top: -51px;
+    left: -94px;
 	background: url('../img/cards-l.png') no-repeat 0 0 / cover;
 }
 .cards__help::after {
@@ -348,15 +348,20 @@ line-height: 150%;
 	position: absolute;
 	width: 332px;
 	height: 176px;
-	top: 25px;
-	right: -50px;
+	top: -53px;
+    right: -100px;
 	background: url('../img/cards-r.png') no-repeat 0 0 / cover;
+}
+.cards p {
+	font-size: 16px !important;
+	width: 90%;
+	margin: 0 auto;
 }
 
 /* ----academ---- */
 
 .academ {
-	padding: 282px 0;
+	padding: 262px 0 ;
 }
 
 
