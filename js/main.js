@@ -67,8 +67,14 @@ jQuery(document).ready(function($) {
             dots: false,
             speed: 300,
             arrows: false,
+            infinite: false,
             slidesToShow: 4,
             responsive: [{
+                breakpoint: 994,
+                settings: {
+                    slidesToShow: 2
+                }
+            },{
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 1
