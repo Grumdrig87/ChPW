@@ -355,6 +355,15 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.about__page {
+  padding: 50px 0;
+}
+.contactus {
+  padding: 50px 0;
+}
+.blog-articles {
+  padding: 50px 0;
+}
 }
 
 
@@ -368,5 +377,110 @@
   }
   .menu_btn.open {
     left: 67%;
+}
+.title {
+  font-size: 30px !important;
+  line-height: 38px !important;
+}
+.main__txt {
+  font-size: 18px;
+}
+.title-l {
+  font-size: 24px !important;
+  line-height: 34px !important;
+}
+.about__help svg {
+  width: 100%;
+}
+.table__card,
+.orders__card {
+  padding: 15px;
+  margin: 0 -20px;
+}
+.table__tab {
+  padding: 5px 12px;
+  font-size: 12px;
+}
+.table__labels {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.table__label:not(:last-child) {
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+.table__sliders {
+  padding-left: 30px;
+}
+.price__card {
+  padding: 40px 16px 40px 20px;
+  margin: 0 -20px;
+}
+.review__help {
+  top: 271px;
+}
+.review__card {
+  width: 230px;
+  padding: 20px 16px;
+}
+.faq__card-wrap {
+  padding: 0 20px 0 20px;
+}
+.faq__title {
+  padding-right: 14px;
+  font-size: 14px;
+  line-height: 21px;
+}
+.faq__card p {
+  font-size: 14px;
+  line-height: 21px;
+}
+.bottom__text {
+  padding: 54px 0;
+}
+.footer__wrap {
+  padding: 50px 0;
+}
+.footer__copy {
+  font-size: 14px;
+}
+.main {
+  padding-top: 30px;
+}
+.about__txt p {
+  font-size: 15px;
+}
+.contactus p {
+  font-size: 15px;
+  line-height: 23px;
+  margin: 0 auto 32px;
+}
+.wrap__head {
+  height: 112px;
+}
+.blog-articles {
+  padding: 30px 0;
+}
+.blog__wrap	{
+	margin-top: -12px;
+	margin-bottom: 20px;
+}
+.blog__card {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.page-link {
+  font-size: 15px;
+  padding: 15px 13px;
 }
 }

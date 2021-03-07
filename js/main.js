@@ -146,33 +146,66 @@ $('[data-line] ul li').css({
   }); 
 
   // sticky sidebar
-//   $(function() {
-//       var sidebar = $("[data-side]");
-//       if (sidebar.length > 0) {
-//           var offset = sidebar.offset(),
-//               topPadding = 150,
-//               sectHeight = $("[data-blwrap]").height(),
-//               headerHeight = $('[data-head]').height(),
-//               sidebarHeight = sidebar.height();
-//           $(window).scroll(function() {
-//               if ($(window).scrollTop() + headerHeight > offset.top && (sectHeight - sidebarHeight) > $(window).scrollTop()) {
-//                   sidebar.stop().animate({
-//                       marginTop: $(window).scrollTop() - offset.top + topPadding
-//                   });
-//               }
-//               if ($(window).scrollTop() + headerHeight < offset.top) {
-//                   sidebar.stop().animate({
-//                       marginTop: 0
-//                   });
-//               }
-//               if ((headerHeight + sectHeight - sidebarHeight) <= $(window).scrollTop()) {
-//                   sidebar.stop().animate({
-//                       marginTop: sectHeight - sidebarHeight
-//                   });
-//               }
-//           });
-//       }
-//   });
+  if ($(window).width() > 993) {
+    $(function() {
+        var sidebar = $("[data-img]");
+        if (sidebar.length > 0) {
+            var offset = sidebar.offset(),
+                topPadding = 100,
+                headerHeight = $('[data-head]').height(),
+                sidebarHeight = sidebar.height();
+            $(window).scroll(function() {
+              sectHeight = $("[data-text]").height();
+              console.log ($(window).scrollTop());
+              console.log (offset.top + sectHeight - sidebarHeight);
+                if ($(window).scrollTop() + headerHeight > offset.top) {
+                    sidebar.stop().animate({
+                        marginTop: $(window).scrollTop() - offset.top + topPadding
+                    });
+                }
+                if ($(window).scrollTop() + headerHeight < offset.top) {
+                    sidebar.stop().animate({
+                        marginTop: 0
+                    });
+                }
+                if ((offset.top + sectHeight - sidebarHeight-40) <= $(window).scrollTop()) {
+                    sidebar.stop().animate({
+                        marginTop: sectHeight - sidebarHeight
+                    });
+                }
+            });
+        }
+    });
+    $(function() {
+      var sidebar = $("[data-imgsec]");
+      if (sidebar.length > 0) {
+          var offset = sidebar.offset(),
+              topPadding = 60,
+              sectHeight = $("[data-textsec]").height(),
+              headerHeight = $('[data-head]').height(),
+              sidebarHeight = sidebar.height();
+          $(window).scroll(function() {
+              sectHeight = $("[data-textsec]").height();
+              if ($(window).scrollTop() + headerHeight > offset.top) {
+                  sidebar.stop().animate({
+                      marginTop: $(window).scrollTop() - offset.top
+                  });
+              }
+              if ($(window).scrollTop() + headerHeight < offset.top) {
+                  sidebar.stop().animate({
+                      marginTop: 0
+                  });
+              }
+              if ((offset.top + sectHeight - sidebarHeight-40) <= $(window).scrollTop()) {
+                  sidebar.stop().animate({
+                      marginTop: sectHeight - sidebarHeight
+                  });
+              }
+          });
+      }
+  });
+  }
+  
   // adaptive
 
 });
