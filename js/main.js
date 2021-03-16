@@ -100,21 +100,6 @@ $('[data-line] ul li').css({
     'width': dotWidth
 });
   
-//   if (jQuery('[data-talk]').length > 0) {
-//       $('[data-talk]').slick({
-//           dots: true,
-//           appendDots: $('[data-line]'),
-//           speed: 300,
-//           arrows: false,
-//           slidesToShow: 4,
-//           variableWidth: true
-//       });
-//   }
-//   var sliderItemsNum = $('[data-talk]').find('.slick-slide').not('.slick-cloned').length;
-//   var dotWidth = $('[data-THelp]').width() / sliderItemsNum;
-//   $('[data-line] ul li').css({
-//       'width': dotWidth
-//   });
   // faq
   if (jQuery('[data-faq]').length > 0) {
       $('[data-faq]').click(function() {
@@ -130,20 +115,23 @@ $('[data-line] ul li').css({
       $('body').toggleClass('open');
   });
   //cookies
-    var banner = $('[data-cookies]');
-    var blockTime = localStorage.getItem('blockTime');
-  if (blockTime !== null) {
-    if (+new Date() >= parseInt(blockTime)) {
-      localStorage.removeItem('blockTime');
-    } else {
-      banner.addClass('close');
-    }
-  }
-  banner.find('.btn').click(function() {
-    banner.addClass('close');
-    // Устанавливаем время блокировки (текущее время + 1 час)
-    localStorage.setItem('blockTime', +new Date() + (3600 * 1000));
-  }); 
+  var banner = $('[data-cookies]');
+  var blockTime = localStorage.getItem('blockTime');
+  
+      if (blockTime !== null) {
+          setTimeout (function(){
+              banner.removeClass('show');
+          }, 3000);
+        } else {
+          banner.addClass('show');
+        };
+ 
+
+banner.find('.btn').click(function() {
+  banner.removeClass('show');
+  // Устанавливаем время блокировки (текущее время + 1 час)
+  localStorage.setItem('blockTime', 1);
+}); 
 
   // sticky sidebar
   if ($(window).width() > 993) {
