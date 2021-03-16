@@ -293,7 +293,10 @@
 .review {
   padding: 100px 0 428px;
 }
-
+.blog-info__slider {
+  min-width: unset;
+  margin-left: 0;
+}
 }
 
 /* 577-768px */
@@ -482,5 +485,20 @@
 .page-link {
   font-size: 15px;
   padding: 15px 13px;
+}
+.breadcrumbs {
+  display: block !important;
+}
+.blog-info figure:not(:last-child) {
+  margin-bottom: 24px;
+}
+.blog-info blockquote p {
+  font-size: 24px;
+}
+.blog-info ul {
+  padding-left: 18px;
+}
+.blog-info__botauth ul {
+  padding-left: 0;
 }
 }
