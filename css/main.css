@@ -1396,3 +1396,31 @@ line-height: 150%;
 	line-height: 150%;
 	color: #032553;
 }
+
+.list-check {
+	padding-left: 0 !important;
+}
+.list-check li {
+	display: block !important;
+	position: relative;
+	padding-left: 37px;
+}
+.list-check li::before {
+	font-family: 'Feather' !important;
+	content: '\e92b';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 4px;
+	font-size: 75%;
+	height: -webkit-calc(1em + .5rem);
+	height: -moz-calc(1em + .5rem);
+	height: calc(1em + .5rem);
+    padding-left: .25rem;
+    padding-right: .25rem;
+    -webkit-border-radius: 10rem;
+       -moz-border-radius: 10rem;
+            border-radius: 10rem;
+	background-color: rgba(66,186,150,.1);
+    color: #42ba96;
+}
